@@ -25,7 +25,7 @@ Program Source_Panel
 
     open(n, file = '10panel.dat', form = 'formatted')
 
-    ForAll(m = 1:n, o = 1:n) eye(m,o) = (m/o)*(o/m)  ! Identify array
+    ForAll(m = 1:n, o = 1:n) eye(m,o) = (m/o)*(o/m)  ! Identity matrice
 
     ! panel corners
     theta = (/ (pi + pi/n -2*pi*(k-1)/n , k = 1,n+1) /)
@@ -43,7 +43,7 @@ Program Source_Panel
     beta = phi + pi/2   ! angle of panel normal
     beta_mat = reshape(beta , (/1,n/))
 
-    S = sqrt(dx**2 + dy**2) ! llenght of panel
+    S = sqrt(dx**2 + dy**2) ! lenght of panel
 
     I = 0
     J = 0

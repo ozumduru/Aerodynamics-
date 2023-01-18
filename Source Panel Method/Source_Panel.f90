@@ -10,7 +10,7 @@ Module data
                          x0 = 0., y0 = 0.     ! center
 
     real*8, allocatable,dimension(:) :: theta,x_p,y_p,x_c,y_c,dx,dy,phi,beta,S
-    real*8, allocatable,dimension(:,:) :: beta_mat,I,J,mat,mat_inv,eye,lambda,Vinf_panel,V,Cp_panel,inver
+    real*8, allocatable,dimension(:,:) :: beta_mat,I,J,mat,mat_inv,eye,lambda,Vinf_panel,V,Cp_panel
     real*8, parameter ::  pi = 4*atan(1.)
     real*8 :: A,B,C,D,E
     integer*8 :: m,o

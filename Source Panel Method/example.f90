@@ -12,9 +12,9 @@ Module data
     real*8, dimension(1,n+1) :: x_p,y_p
     real*8, dimension(1,n) :: Vp,Cpp
     contains
-    include 'circle.f90'
+    include 'object_circle.f90'
     include 'inv.f90'
-    include 'Source.f90'
+    include 'Source_Panel.f90'
 end Module
 
 Program Source_Panel_Program

@@ -49,6 +49,6 @@ subroutine Source_Panel(V_infinity,x_corner,y_corner,panel_count,Vpanel)
     
     lambda =-matmul(mat_inv,transpose(Vinf_panel))
     
-    Vpanel =  V_infinity*sin(beta_mat) + 0.5*matmul(transpose(lambda),transpose(J))/pi_number
+    Vpanel =  V_infinity*sin(beta_mat) + 0.5*matmul(J,lambda)/pi_number
     return
     end
